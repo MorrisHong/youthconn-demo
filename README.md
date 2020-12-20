@@ -4,6 +4,10 @@
 - MAC
 - IntelliJ Ultimate
 - Minikube
+- MySQL 8
+
+## Minikube 설치
+[https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
  
 ## 테이블 만들기
 ```sql
