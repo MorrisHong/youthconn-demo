@@ -1,0 +1,23 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+metadata:
+  name: youthconn-demo
+build:
+  artifacts:
+    - image: youthconn-demo
+      context: .
+      jib:
+        project: kr.gracelove:youthconn-demo
+        args:
+          - "-Dmaven.test.skip=true"
+          - "-Djib.to.credHelper=wincred"
+deploy:
+  kubectl:
+    manifests:
+      - k8s/*.yml
+    defaultNamespace: default
+portForward:
+  - resourceType: deployment
+    resourceName: youthconn-demo
+    namespace: default
+    port: 8080
