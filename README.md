@@ -22,6 +22,8 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 ### Mac
 1. 다운로드
  - `brew install minikube`
+2. 실행
+ - `minikube start`
 
 ### Windows
 1. 다운로드
