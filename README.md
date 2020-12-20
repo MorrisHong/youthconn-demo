@@ -1,13 +1,33 @@
 # youthconn-demo
 
 ## 환경
-- MAC
+- Mac
+- Java 11
 - IntelliJ Ultimate
 - Minikube
 - MySQL 8
 
+## docker for ~~~ 설치
+
+### Mac
+https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+
+### Windows
+https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+
+
 ## Minikube 설치
 [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
+
+### Mac
+1. 다운로드
+ - `brew install minikube`
+
+### Windows
+1. 다운로드
+ - https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe
+2. 실행
+ - `minikube start --driver=docker`
  
 ## 테이블 만들기
 ```sql
