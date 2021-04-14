@@ -44,4 +44,8 @@ public class TodoController {
 		return TodoDto.TodoResponse.of(updatedTodo);
 	}
 
+	@GetMapping("/sample")
+	public String sample() {
+		return "Hello World!!!!~!!@#!#";
+	}
 }
